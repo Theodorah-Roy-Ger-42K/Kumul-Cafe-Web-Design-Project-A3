@@ -327,7 +327,68 @@ textarea:focus-visible {
     margin-top: 0;
 }
 
+/* =========================================================
+   FEATURED CARD FLEXBOX
+   ========================================================= */
 
+.featured-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: var(--space-lg);
+
+    align-items: stretch;
+}
+
+.featured-cards .content-card {
+    flex: 1 1 250px;
+
+    margin: 0;
+}
+
+/* =========================================================
+   ABOUT PAGE GRID
+   ========================================================= */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: var(--space-lg);
+
+    align-items: stretch;
+}
+
+.about-grid .content-card {
+    margin: 0;
+}
+
+.about-experience {
+    grid-column: 1 / -1;
+}
+
+/* =========================================================
+   MENU CATEGORY GRID
+   ========================================================= */
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: var(--space-lg);
+
+    align-items: stretch;
+}
+
+.menu-category {
+    margin: 0;
+}
+
+.menu-category table {
+    width: 100%;
+}
 /* =========================================================
    11. IMAGES AND FIGURES
    ========================================================= */
@@ -594,6 +655,9 @@ input[type="reset"]:active {
    ========================================================= */
 
 @media (max-width: 768px) {
+    .menu-grid {
+    grid-template-columns: 1fr;
+}
 
     .site-header {
         padding: var(--space-lg) var(--space-md);
@@ -639,6 +703,16 @@ input[type="reset"]:active {
    ========================================================= */
 
 @media (max-width: 480px) {
+    .about-grid {
+    grid-template-columns: 1fr;
+}
+
+.about-experience {
+    grid-column: auto;
+}
+    .featured-cards {
+    flex-direction: column;
+}
 
     body {
         font-size: 0.95rem;
