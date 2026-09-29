@@ -6,11 +6,14 @@
     <title>Kumul Café | Contact &amp; Reservations</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
+
+    <header class="site-header">
         <p>Kumul Café</p>
         <p>Fresh Flavours, Local Vibes.</p>
-        <nav aria-label="Main navigation">
+
+        <nav class="site-nav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="menu.html">Menu</a>
@@ -19,104 +22,241 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+
+    <main class="site-main">
+
+        <section class="content-section intro-section">
             <h1>Contact Kumul Café</h1>
-            <p>Use this page to contact Kumul Café, ask questions, or make a reservation enquiry. <strong>Fresh Flavours, Local Vibes.</strong></p>
-            <p>Kumul Café is a fictional café created for a university web design project. The contact details and form below are for demonstration only.</p>
+
+            <p>
+                Use this page to contact Kumul Café, ask questions, or make a
+                reservation enquiry.
+                <strong>Fresh Flavours, Local Vibes.</strong>
+            </p>
+
+            <p>
+                Kumul Café is a fictional café created for a university web
+                design project. The contact details and form below are for
+                demonstration only.
+            </p>
         </section>
 
-        <section>
+
+        <section class="content-section">
+
             <h2>Contact Kumul Café</h2>
-            <article>
+
+            <article class="content-card">
+
                 <h3>Fictional Project Contact Information</h3>
+
                 <address>
                     <p>Location: Port Moresby, Papua New Guinea</p>
+
                     <p>Phone: +675 7000 0000</p>
-                    <p>Email: <a href="mailto:hello@kumulcafe.example">hello@kumulcafe.example</a></p>
+
+                    <p>
+                        Email:
+                        <a href="mailto:hello@kumulcafe.example">
+                            hello@kumulcafe.example
+                        </a>
+                    </p>
                 </address>
-                <p>These details are fictional examples for the university project and do not represent a real business.</p>
+
+                <p>
+                    These details are fictional examples for the university
+                    project and do not represent a real business.
+                </p>
+
             </article>
+
         </section>
 
-        <section>
+
+        <section class="content-section">
+
             <h2>Reservation Enquiry</h2>
-            <p>This demonstration form does not send or store real reservations. Complete it to practise using an accessible HTML5 form.</p>
+
+            <p>
+                This demonstration form does not send or store real
+                reservations. Complete it to practise using an accessible
+                HTML5 form.
+            </p>
+
 
             <form action="#" method="post">
+
                 <p>
                     <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full_name" required>
+
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full_name"
+                        required
+                    >
                 </p>
+
 
                 <p>
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    >
                 </p>
+
 
                 <p>
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+675 7000 0000" required>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+675 7000 0000"
+                        required
+                    >
                 </p>
+
 
                 <p>
                     <label for="guests">Number of Guests</label>
-                    <input type="number" id="guests" name="guests" min="1" max="12" required>
+
+                    <input
+                        type="number"
+                        id="guests"
+                        name="guests"
+                        min="1"
+                        max="12"
+                        required
+                    >
                 </p>
+
 
                 <p>
                     <label for="reservation-date">Reservation Date</label>
-                    <input type="date" id="reservation-date" name="reservation_date" required>
+
+                    <input
+                        type="date"
+                        id="reservation-date"
+                        name="reservation_date"
+                        required
+                    >
                 </p>
+
 
                 <p>
                     <label for="reservation-time">Preferred Time</label>
-                    <input type="time" id="reservation-time" name="reservation_time" required>
+
+                    <input
+                        type="time"
+                        id="reservation-time"
+                        name="reservation_time"
+                        required
+                    >
                 </p>
+
 
                 <p>
                     <label for="booking-type">Booking Type</label>
-                    <select id="booking-type" name="booking_type" required>
+
+                    <select
+                        id="booking-type"
+                        name="booking_type"
+                        required
+                    >
                         <option value="">Select a booking type</option>
                         <option value="cafe-table">Café Table</option>
                         <option value="study-group">Study Group</option>
-                        <option value="small-celebration">Small Celebration</option>
+                        <option value="small-celebration">
+                            Small Celebration
+                        </option>
                         <option value="other">Other</option>
                     </select>
                 </p>
 
+
                 <fieldset>
+
                     <legend>Preferred Contact Method</legend>
+
                     <p>
-                        <input type="radio" id="contact-email" name="contact_preference" value="email" required>
+                        <input
+                            type="radio"
+                            id="contact-email"
+                            name="contact_preference"
+                            value="email"
+                            required
+                        >
+
                         <label for="contact-email">Email</label>
                     </p>
+
                     <p>
-                        <input type="radio" id="contact-phone" name="contact_preference" value="phone">
+                        <input
+                            type="radio"
+                            id="contact-phone"
+                            name="contact_preference"
+                            value="phone"
+                        >
+
                         <label for="contact-phone">Phone</label>
                     </p>
+
                 </fieldset>
 
-                <p>
-                    <label for="message">Special Request or Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us about any special request or question."></textarea>
-                </p>
 
                 <p>
-                    <button type="submit">Submit Reservation Enquiry</button>
-                    <button type="reset">Clear Form</button>
+                    <label for="message">
+                        Special Request or Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tell us about any special request or question."
+                    ></textarea>
                 </p>
+
+
+                <p>
+                    <button type="submit">
+                        Submit Reservation Enquiry
+                    </button>
+
+                    <button type="reset">
+                        Clear Form
+                    </button>
+                </p>
+
             </form>
+
         </section>
 
-        <section>
+
+        <section class="content-section">
+
             <h2>Before You Submit</h2>
-            <p>Reservations on this page are enquiries for the university project only. Use accurate contact details in a real form, and include any useful special requests in the message field.</p>
+
+            <p>
+                Reservations on this page are enquiries for the university
+                project only. Use accurate contact details in a real form,
+                and include any useful special requests in the message field.
+            </p>
+
         </section>
+
     </main>
 
-    <footer>
+
+    <footer class="site-footer">
         <p>Kumul Café — Fresh Flavours, Local Vibes.</p>
     </footer>
+
 </body>
 </html>
